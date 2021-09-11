@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{30FC6714-4AF2-494F-8203-0899FC4F7BE5}</ProjectGuid>
+    <ProjectGuid>{E5D134BB-634E-4320-8038-0807A9F3AC0C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WindowsFormsApp2</RootNamespace>
-    <AssemblyName>WindowsFormsApp2</AssemblyName>
+    <RootNamespace>Lab02_01</RootNamespace>
+    <AssemblyName>Lab02-01</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,14 +46,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="EJEMPLOMDI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="EJEMPLOMDI.Designer.cs">
+      <DependentUpon>EJEMPLOMDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manProducto.Designer.cs">
+      <DependentUpon>manProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manUsuario.Designer.cs">
+      <DependentUpon>manUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrincipalMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrincipalMDI.Designer.cs">
+      <DependentUpon>PrincipalMDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EJEMPLOMDI.resx">
+      <DependentUpon>EJEMPLOMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manProducto.resx">
+      <DependentUpon>manProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manUsuario.resx">
+      <DependentUpon>manUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrincipalMDI.resx">
+      <DependentUpon>PrincipalMDI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
