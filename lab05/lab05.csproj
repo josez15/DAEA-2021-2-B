@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{511B2BDB-9754-412A-BDA8-1D600A5AA44B}</ProjectGuid>
+    <ProjectGuid>{9D7C9E25-1458-4B84-947B-16E1E010DB1A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Lab03</RootNamespace>
-    <AssemblyName>Lab03</AssemblyName>
+    <RootNamespace>lab05</RootNamespace>
+    <AssemblyName>lab05</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,43 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cursos.cs">
+    <Compile Include="frmPerson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cursos.Designer.cs">
-      <DependentUpon>Cursos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmConDB.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmConDB.Designer.cs">
-      <DependentUpon>frmConDB.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Persona.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Persona.Designer.cs">
-      <DependentUpon>Persona.cs</DependentUpon>
+    <Compile Include="frmPerson.Designer.cs">
+      <DependentUpon>frmPerson.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Cursos.resx">
-      <DependentUpon>Cursos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmConDB.resx">
-      <DependentUpon>frmConDB.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Persona.resx">
-      <DependentUpon>Persona.cs</DependentUpon>
+    <EmbeddedResource Include="frmPerson.resx">
+      <DependentUpon>frmPerson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
