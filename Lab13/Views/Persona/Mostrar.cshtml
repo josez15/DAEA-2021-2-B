@@ -1,0 +1,64 @@
+﻿@model Lab13.Models.Persona
+
+@{
+    ViewBag.Title = "Mostrar";
+}
+
+<h2>Mostrar Persona</h2>
+
+
+
+
+@using (Html.BeginForm())
+{
+    <div class="row">
+        <div class="col-md-2">
+            <label>@Html.LabelFor(model => model.PersonaID)</label>
+        </div>
+        <div class="col-md-5">
+            @Html.TextBoxFor(model => model.PersonaID)
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <label>@Html.LabelFor(model => model.Nombre)</label>
+        </div>
+        <div class="col-md-5">
+            @Html.TextBoxFor(model => model.Nombre)
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <label>@Html.LabelFor(model => model.Apellido)</label>
+        </div>
+        <div class="col-md-5">
+            @Html.TextBoxFor(model => model.Apellido)
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <label>@Html.LabelFor(model => model.FechaNacimiento)</label>
+        </div>
+        <div class="col-md-5">
+            @Html.TextBoxFor(model => model.FechaNacimiento)
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <label>@Html.LabelFor(model => model.Direccion)</label>
+        </div>
+        <div class="col-md-5">
+            @Html.TextBoxFor(model => model.Direccion)
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <label>@Html.LabelFor(model => model.Email)</label>
+        </div>
+        <div class="col-md-5">
+            @Html.TextBoxFor(model => model.Email)
+        </div>
+    </div>
+}
+
+@Html.ActionLink("Listar Personas", "Listar", "Persona")
