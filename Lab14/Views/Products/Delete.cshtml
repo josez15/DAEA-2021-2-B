@@ -1,0 +1,91 @@
+﻿@model Lab14.Products
+
+@{
+    ViewBag.Title = "Eliminar Producto";
+}
+
+<h2>Delete</h2>
+
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">
+        @Html.DisplayNameFor(model => model.ProductID)
+    </label>
+    @Html.EditorFor(model => model.ProductID, new { htmlAttributes = new { @readonly = "readonly", @class = "form-control" } })
+
+</div>
+
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">
+        @Html.LabelFor(model => model.ProductName)
+    </label>
+    @Html.EditorFor(model => model.ProductName, new { htmlAttributes = new { @readonly = "readonly", @class = "form-control" } })
+    @Html.ValidationMessageFor(model => model.ProductName)
+</div>
+
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">
+        @Html.LabelFor(model => model.SupplierID)
+    </label>
+    @Html.EditorFor(model => model.SupplierID, new { htmlAttributes = new { @readonly = "readonly", @class = "form-control" } })
+    @Html.ValidationMessageFor(model => model.SupplierID)
+</div>
+
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">
+        @Html.LabelFor(model => model.CategoryID)
+    </label>
+    @Html.EditorFor(model => model.CategoryID, new { htmlAttributes = new { @readonly = "readonly", @class = "form-control" } })
+    @Html.ValidationMessageFor(model => model.CategoryID)
+</div>
+
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">
+        @Html.LabelFor(model => model.QuantityPerUnit)
+    </label>
+    @Html.EditorFor(model => model.QuantityPerUnit, new { htmlAttributes = new { @readonly = "readonly", @class = "form-control" } })
+    @Html.ValidationMessageFor(model => model.QuantityPerUnit)
+</div>
+
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">
+        @Html.LabelFor(model => model.UnitPrice)
+    </label>
+    @Html.EditorFor(model => model.UnitPrice, new { htmlAttributes = new { @readonly = "readonly", @class = "form-control" } })
+    @Html.ValidationMessageFor(model => model.UnitPrice)
+</div>
+
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">
+        @Html.LabelFor(model => model.UnitsInStock)
+    </label>
+    @Html.EditorFor(model => model.UnitsInStock, new { htmlAttributes = new { @readonly = "readonly", @class = "form-control" } })
+    @Html.ValidationMessageFor(model => model.UnitsInStock)
+</div>
+
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">
+        @Html.LabelFor(model => model.Discontinued)
+    </label>
+    @Html.EditorFor(model => model.Discontinued, new { htmlAttributes = new { @readonly = "readonly", @class = "form-control" } })
+    @Html.ValidationMessageFor(model => model.Discontinued)
+</div>
+
+@using (Html.BeginForm())
+{
+    <div class="col-auto">
+        <input type="submit" class="btn btn-danger mb-3" value="Delete" />
+    </div>
+}
+
+<div>
+    <div>
+
+        @Html.ActionLink(
+     linkText: "Retornar a Detalles",
+     actionName: "Details",
+     controllerName: "Categories",
+     routeValues: new { id = Model.CategoryID },
+     htmlAttributes: null
+     )
+    </div>
+</div>
